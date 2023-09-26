@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #121417;
+  font-family: "Overpass", "Arial", sans-serif;
+  height: 100%;
+}
+body #container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #252d37;
+  background: linear-gradient(180deg, rgb(37, 45, 55) 8%, rgb(25, 29, 34) 95%);
+  max-width: 430px;
+  min-width: 360px;
+  width: 90%;
+  height: 450px;
+  border-radius: 40px;
+  padding: 40px 35px;
+}
+body #container #rating-card .star-img {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: rgba(149, 158, 172, 0.1);
+}
+body #container #rating-card .star-img img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body #container #rating-card h1 {
+  color: #fff;
+  font-size: 31px;
+  margin: 20px 0 10px 0;
+}
+body #container #rating-card p {
+  line-height: 1.5;
+  font-size: 15px;
+  color: #959eac;
+}
+body #container #rating-card .span-active {
+  background: #fb7413;
+}
+body #container #rating-card .numbers {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0;
+}
+body #container #rating-card .numbers span {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(149, 158, 172, 0.1);
+  line-height: 50px;
+  text-align: center;
+  transition: 0.3s ease-out;
+  color: #959eac;
+  font-size: 17px;
+}
+body #container #rating-card .numbers span:hover {
+  cursor: pointer;
+  background: #959eac;
+  color: #fff;
+}
+body #container #rating-card .numbers span:active {
+  background: #fb7413;
+}
+body #container #rating-card button {
+  position: relative;
+  background: #fb7413;
+  border: 0;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 40px;
+  height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 2px;
+  transition: 0.4s ease-out;
+}
+body #container #rating-card button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #fb7413;
+}
+
+/*# sourceMappingURL=style.css.map */

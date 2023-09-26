@@ -1,0 +1,142 @@
+// FONTS
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+// VARIABLES
+
+$primary: #fb7413;
+
+// MIXINS
+
+@mixin circle($wh) {
+  height: $wh;
+  width: $wh;
+  border-radius: 50%;
+  background: rgba(#959eac, 10%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #121417;
+  font-family: "Overpass", "Arial", sans-serif;
+  height: 100%;
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #252d37; //fallback
+    background: linear-gradient(
+      180deg,
+      rgba(37, 45, 55, 1) 8%,
+      rgb(25, 29, 34) 95%
+    );
+    max-width: 430px;
+    min-width: 360px;
+    width: 90%;
+    height: 450px;
+    border-radius: 40px;
+    padding: 40px 35px;
+
+    #rating-card {
+      .star-img {
+        position: relative;
+        //   height: 45px;
+        //   width: 45px;
+        //   border-radius: 50%;
+        //   background: rgba(#959eac, 20%);
+        @include circle(45px);
+
+        img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 31px;
+        margin: 20px 0 10px 0;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        color: #959eac;
+      }
+
+      .span-active {
+        background: $primary;
+      }
+
+      .numbers {
+        display: flex;
+        justify-content: space-between;
+        margin: 35px 0;
+
+        span {
+          @include circle(50px);
+          line-height: 50px;
+          text-align: center;
+          transition: 0.3s ease-out;
+          color: #959eac;
+          font-size: 17px;
+
+          &:hover {
+            cursor: pointer;
+            background: #959eac;
+            color: #fff;
+          }
+
+          &:active {
+            background: $primary;
+          }
+        }
+      }
+
+      button {
+        position: relative;
+        background: $primary;
+        border: 0;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 40px;
+        height: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 17px;
+        letter-spacing: 2px;
+        transition: 0.4s ease-out;
+
+        &:hover {
+          // background: lighten($primary, 3%);
+          // letter-spacing: 4px;
+          cursor: pointer;
+          background: #fff;
+          color: $primary;
+        }
+      }
+    }
+
+    #rating-submitted {
+    }
+  }
+}
