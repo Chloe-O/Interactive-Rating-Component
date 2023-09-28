@@ -32,6 +32,16 @@ body #container {
   border-radius: 40px;
   padding: 40px 35px;
 }
+body #container h1 {
+  color: #fff;
+  font-size: 31px;
+  margin: 20px 0 10px 0;
+}
+body #container p {
+  line-height: 1.5;
+  font-size: 15px;
+  color: #959eac;
+}
 body #container #rating-card .star-img {
   position: relative;
   height: 45px;
@@ -47,25 +57,12 @@ body #container #rating-card .star-img img {
   right: 0;
   margin: auto;
 }
-body #container #rating-card h1 {
-  color: #fff;
-  font-size: 31px;
-  margin: 20px 0 10px 0;
-}
-body #container #rating-card p {
-  line-height: 1.5;
-  font-size: 15px;
-  color: #959eac;
-}
-body #container #rating-card .span-active {
-  background: #fb7413;
-}
-body #container #rating-card .numbers {
+body #container #rating-card #numberContainer {
   display: flex;
   justify-content: space-between;
   margin: 35px 0;
 }
-body #container #rating-card .numbers span {
+body #container #rating-card #numberContainer span {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -76,13 +73,17 @@ body #container #rating-card .numbers span {
   color: #959eac;
   font-size: 17px;
 }
-body #container #rating-card .numbers span:hover {
+body #container #rating-card #numberContainer span:hover {
   cursor: pointer;
   background: #959eac;
   color: #fff;
 }
-body #container #rating-card .numbers span:active {
+body #container #rating-card #numberContainer span:active {
   background: #fb7413;
+}
+body #container #rating-card #numberContainer .selected {
+  background: #fb7413;
+  color: #fff;
 }
 body #container #rating-card button {
   position: relative;
@@ -102,6 +103,27 @@ body #container #rating-card button:hover {
   cursor: pointer;
   background: #fff;
   color: #fb7413;
+}
+body #container #rating-submitted {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+body #container #rating-submitted .submitted-img {
+  margin: 0 auto;
+}
+body #container #rating-submitted h1,
+body #container #rating-submitted p {
+  text-align: center;
+}
+body #container #rating-submitted .submitted-rating {
+  background: #22303c;
+  color: #fb7413;
+  line-height: 15px;
+  padding: 8px 15px;
+  border-radius: 15px;
+  width: fit-content;
+  margin: 20px auto;
 }
 
 /*# sourceMappingURL=style.css.map */

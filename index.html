@@ -10,7 +10,6 @@
       sizes="32x32"
       href="./images/icon-star.svg"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
@@ -24,14 +23,26 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <div class="numbers">
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
+        <div id="numberContainer">
+          <span class="number-rating">1</span>
+          <span class="number-rating">2</span>
+          <span class="number-rating">3</span>
+          <span class="number-rating">4</span>
+          <span class="number-rating">5</span>
         </div>
         <button>Submit</button>
+      </div>
+
+      <div id="rating-submitted">
+        <div class="submitted-img">
+          <img src="/images/illustration-thank-you.svg" alt="Thank you" />
+        </div>
+        <p class="submitted-rating">You selected 4 out of 5</p>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
       </div>
     </div>
 

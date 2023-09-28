@@ -52,6 +52,18 @@ body {
     border-radius: 40px;
     padding: 40px 35px;
 
+    h1 {
+      color: #fff;
+      font-size: 31px;
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 15px;
+      color: #959eac;
+    }
+
     #rating-card {
       .star-img {
         position: relative;
@@ -71,23 +83,7 @@ body {
         }
       }
 
-      h1 {
-        color: #fff;
-        font-size: 31px;
-        margin: 20px 0 10px 0;
-      }
-
-      p {
-        line-height: 1.5;
-        font-size: 15px;
-        color: #959eac;
-      }
-
-      .span-active {
-        background: $primary;
-      }
-
-      .numbers {
+      #numberContainer {
         display: flex;
         justify-content: space-between;
         margin: 35px 0;
@@ -109,6 +105,11 @@ body {
           &:active {
             background: $primary;
           }
+        }
+
+        .selected {
+          background: $primary;
+          color: #fff;
         }
       }
 
@@ -137,6 +138,30 @@ body {
     }
 
     #rating-submitted {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .submitted-img {
+        margin: 0 auto;
+        img {
+        }
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+
+      .submitted-rating {
+        background: #22303c;
+        color: $primary;
+        line-height: 15px;
+        padding: 8px 15px;
+        border-radius: 15px;
+        width: fit-content;
+        margin: 20px auto;
+      }
     }
   }
 }
