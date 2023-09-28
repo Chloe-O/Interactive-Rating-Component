@@ -1,3 +1,5 @@
+![Link to live site](https://chloe-o.github.io/Interactive-Rating-Component/)
+
 # Interactive rating component
 
 ![Snapshot of completed challenge](/design/challenge-snapshot.png)
