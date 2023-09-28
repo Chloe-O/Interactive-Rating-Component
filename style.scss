@@ -169,4 +169,59 @@ body {
       }
     }
   }
+
+  #modal-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    #modal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      background: #252d37;
+      background: linear-gradient(
+        180deg,
+        rgba(37, 45, 55, 1) 8%,
+        rgb(26, 32, 39) 88%
+      );
+      max-width: 380px;
+      min-width: 360px;
+      width: 90%;
+      height: 200px;
+      padding: 50px 20px;
+      border-radius: 20px;
+
+      #close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        svg {
+          fill: #fff;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      h2 {
+        color: #fff;
+        margin: 0 0 20px 0;
+      }
+
+      p {
+        color: #fff;
+      }
+    }
+  }
 }

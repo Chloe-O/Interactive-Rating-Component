@@ -131,5 +131,49 @@ body #container #submitted-card #submitted-rating {
   width: fit-content;
   margin: 20px auto;
 }
+body #modal-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+body #modal-overlay #modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  background: #252d37;
+  background: linear-gradient(180deg, rgb(37, 45, 55) 8%, rgb(26, 32, 39) 88%);
+  max-width: 380px;
+  min-width: 360px;
+  width: 90%;
+  height: 200px;
+  padding: 50px 20px;
+  border-radius: 20px;
+}
+body #modal-overlay #modal #close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+body #modal-overlay #modal #close svg {
+  fill: #fff;
+}
+body #modal-overlay #modal #close svg:hover {
+  cursor: pointer;
+}
+body #modal-overlay #modal h2 {
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+body #modal-overlay #modal p {
+  color: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
