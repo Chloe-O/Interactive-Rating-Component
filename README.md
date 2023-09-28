@@ -1,4 +1,4 @@
-![Link to live site](https://chloe-o.github.io/Interactive-Rating-Component/)
+[Link to live site](https://chloe-o.github.io/Interactive-Rating-Component/)
 
 # Interactive rating component
 
