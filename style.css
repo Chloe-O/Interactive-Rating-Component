@@ -42,6 +42,10 @@ body #container p {
   font-size: 15px;
   color: #959eac;
 }
+body #container #rating-card {
+  position: relative;
+  transition: 0.2s;
+}
 body #container #rating-card .star-img {
   position: relative;
   height: 45px;
@@ -104,19 +108,21 @@ body #container #rating-card button:hover {
   background: #fff;
   color: #fb7413;
 }
-body #container #rating-submitted {
+body #container #submitted-card {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
+  margin: 25px 0 0 0;
+  transition: 0.2s;
 }
-body #container #rating-submitted .submitted-img {
+body #container #submitted-card .submitted-img {
   margin: 0 auto;
 }
-body #container #rating-submitted h1,
-body #container #rating-submitted p {
+body #container #submitted-card h1,
+body #container #submitted-card p {
   text-align: center;
 }
-body #container #rating-submitted .submitted-rating {
+body #container #submitted-card #submitted-rating {
   background: #22303c;
   color: #fb7413;
   line-height: 15px;
